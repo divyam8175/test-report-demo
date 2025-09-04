@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.243" timestamp="2025-09-04T08:36:53.238269+05:30" hostname="My"><testcase classname="" name="tests.test_app" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\divya\OneDrive\Desktop\test-report-demo\tests\test_app.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\..\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_app.py:2: in &lt;module&gt;
+    from app import add, divide
+E   ModuleNotFoundError: No module named 'app'</error></testcase></testsuite></testsuites>
