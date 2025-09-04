@@ -18,6 +18,9 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+
     - name: Run tests with JUnit + HTML + Allure
       run: |
         pytest --junitxml=report.xml
@@ -31,4 +34,3 @@ jobs:
         path: |
           report.xml
           report.html
-          allure-results/
